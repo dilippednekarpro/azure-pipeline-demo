@@ -3,14 +3,13 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
-- none
+pool:  
+  name: local 
 
-pool:
-  name: local
+trigger: none 
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+steps: 
+- script: echo Hello, world! 
+  displayName: 'Run a one-line script' 
 
 
